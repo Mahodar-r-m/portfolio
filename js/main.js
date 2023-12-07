@@ -230,19 +230,19 @@ $.ajax({
 //   }
 // };
 
-// Get instagram user info
-$.ajax({
-	url: `https://instagram28.p.rapidapi.com/user_info`,
-	method: 'get',
-	data: jQuery.param({user_name: 'mahodar.majgaonkar'}),
-	// params: {
-	// 	short_code: 'CA_ifcxMjFR'
-	// },
-	headers: {
-		'X-RapidAPI-Key': '6744ea41b9mshbec1c2880f169a6p1901cdjsn9359f6ba702a',
-		'X-RapidAPI-Host': 'instagram28.p.rapidapi.com'
-	},
-	success: function (response) {
-		console.log(response);
-	}
-})
+// // Get instagram user info
+// $.ajax({
+// 	url: `https://instagram28.p.rapidapi.com/user_info`,
+// 	method: 'get',
+// 	data: jQuery.param({user_name: 'mahodar.majgaonkar'}),
+// 	// params: {
+// 	// 	short_code: 'CA_ifcxMjFR'
+// 	// },
+// 	headers: {
+// 		'X-RapidAPI-Key': '6744ea41b9mshbec1c2880f169a6p1901cdjsn9359f6ba702a',
+// 		'X-RapidAPI-Host': 'instagram28.p.rapidapi.com'
+// 	},
+// 	success: function (response) {
+// 		console.log(response);
+// 	}
+// })
