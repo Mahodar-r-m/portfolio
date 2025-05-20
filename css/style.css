@@ -21,6 +21,10 @@ body {
   background: #fff;
 }
 
+/* * {
+  cursor: url(../images/peacock.gif), auto;
+} */
+
 #page {
   position: relative;
   overflow-x: hidden;

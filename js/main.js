@@ -148,6 +148,8 @@
 
 }());
 
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
 // API to get Medium articles
 // https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mahodar.majgaonkar
 // Ref: https://stackoverflow.com/a/59308448

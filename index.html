@@ -1,46 +1,122 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Portfolio | Mahodar Majgaonkar</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Portfolio website of Mahodar Majgaonkar" />
-	<meta name="keywords" content="portfolio, website, mahodar, majgaonkar, artist, developer, software, software developer, responsive" />
-	<meta name="author" content="mahodar.majgaonkar" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Portfolio | Mahodar Majgaonkar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Portfolio website of Mahodar Majgaonkar" />
+		<meta name="keywords" content="portfolio, website, mahodar, majgaonkar, artist, developer, software, software developer, responsive" />
+		<meta name="author" content="mahodar.majgaonkar" />
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+		
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="css/icomoon.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="css/bootstrap.css">
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="css/style.css">
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+		<!-- Modernizr JS -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
 
-	</head>
+		</head>
+		<!-- Custom Adaptive Cursor -->
+		<style>
+			body {
+				cursor: none !important;
+			}
+			#custom-cursor {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 28px;
+				height: 28px;
+				pointer-events: none;
+				user-select: none;
+				z-index: 9999;
+				transition: transform 0.03s linear;
+				filter: drop-shadow(0 1px 1px rgba(0,0,0,.4));
+				transform-origin: 10px 9px;
+			}
+			/* Hide custom cursor on touch devices */
+			@media (hover: none) and (pointer: coarse) {
+				body {
+					cursor: auto !important;
+				}
+				#custom-cursor {
+					display: none !important;
+				}
+			}
+		</style>
+		<!-- <svg id="custom-cursor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+			<polygon fill="#FFFFFF" points="8.2,20.9 8.2,4.9 19.8,16.5 13,16.5 12.6,16.6 "/>
+			<polygon fill="#FFFFFF" points="17.3,21.6 13.7,23.1 9,12 12.7,10.5 "/>
+			<rect x="12.5" y="13.6" transform="matrix(0.9221 -0.3871 0.3871 0.9221 -5.7605 6.5909)" width="2" height="8"/>
+			<polygon points="9.2,7.3 9.2,18.5 12.2,15.6 12.6,15.5 17.4,15.5 "/>
+		</svg> -->
+		<svg id="custom-cursor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 38" width="32" height="38">
+			<!-- Feather stem (main) -->
+			<rect x="15" y="10" width="2" height="14" rx="1" fill="#3e8e41"/>
+			<!-- Feather body -->
+			<ellipse cx="16" cy="10" rx="7" ry="12" fill="#4fc3f7" stroke="#388e3c" stroke-width="1.5"/>
+			<!-- Feather eye (outer) -->
+			<ellipse cx="16" cy="8" rx="3.5" ry="5" fill="#fff176" stroke="#388e3c" stroke-width="1"/>
+			<!-- Feather eye (middle) -->
+			<ellipse cx="16" cy="8" rx="2" ry="3" fill="#1976d2"/>
+			<!-- Feather eye (center) -->
+			<ellipse cx="16" cy="8" rx="1" ry="1.5" fill="#43a047"/>
+			<!-- Bottom stem extension (cute, leaf-like) -->
+			<rect x="15.4" y="24" width="1.2" height="10" rx="0.6" fill="#388e3c"/>
+			<!-- Optional: a little root/curve at the end for a natural look -->
+			<ellipse cx="16" cy="34.5" rx="1.2" ry="1.5" fill="#388e3c" opacity="0.7"/>
+		</svg>
+		<script>
+		// Minimal adaptive cursor JS
+		const cursor = document.getElementById('custom-cursor');
+		let lastPos = {x: window.innerWidth/2, y: window.innerHeight/2};
+		let lastAngle = 0;
+		let positions = [];
+
+		document.addEventListener('mousemove', e => {
+			const pos = {x: e.clientX, y: e.clientY};
+			positions.push(pos);
+			if (positions.length > 10) positions.shift();
+			const avg = positions.reduce((a, b) => ({x: a.x + b.x, y: a.y + b.y}), {x:0, y:0});
+			const avgPos = {x: avg.x/positions.length, y: avg.y/positions.length};
+			const angle = Math.atan2(pos.y - avgPos.y, pos.x - avgPos.x) * 180 / Math.PI;
+			lastAngle = angle;
+			cursor.style.transform = `translate(${pos.x-10}px,${pos.y-9}px) rotate(${angle-90}deg)`;
+			lastPos = pos;
+		});
+		// // For touch devices (optional)
+		// document.addEventListener('touchmove', e => {
+		// 	if (e.touches.length) {
+		// 	const pos = {x: e.touches[0].clientX, y: e.touches[0].clientY};
+		// 	cursor.style.transform = `translate(${pos.x-10}px,${pos.y-9}px) rotate(${lastAngle-90}deg)`;
+		// 	}
+		// });
+		</script>
 	<body>
 		
 	<div class="fh5co-loader"></div>
@@ -88,9 +164,9 @@
 					</ul>
 				</div>
 				<div class="col-md-8" style="position: relative;">
-					<h2>नमस्ते!</h2>
-					<p>Welcome to my world of code, colors, and conservation! I'm Mahodar Majgaonkar, a software developer with a passion for pushing boundaries, but my canvas extends far beyond programming.</p>
-					<p>As an artist, I capture life's essence through vibrant strokes, exploring captivating forms of paper art. Nature is my muse, and my commitment to conservation runs deep. I celebrate with nature's symphony, plant seeds of change, and gift cherished ones the gift of life on their birthdays: a green companion to grow alongside them. Join me on this transformative journey where art meets innovation, and technology becomes a powerful tool for positive change.</p>
+					<h2>नमस्ते 🙏</h2>
+					<p>Welcome to my world of code, colors, and creativity! I'm Mahodar Majgaonkar, a software developer who loves exploring new possibilities, but my canvas extends far beyond programming.</p>
+					<p>As an artist, I capture life's essence through vibrant strokes and unique paper art. Alongside my passion for technology and design, I find inspiration in moments of quiet reflection and a touch of spirituality—believing that both art and code can be soulful expressions. Join me on this journey where innovation, creativity, and a mindful spirit come together.</p>
 					<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="https://twitter.com/MahodarM" target="_blank"><i class="icon-twitter2"></i></a></li>
@@ -121,15 +197,27 @@
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
+									<h3 class="timeline-title">Backend Engineer</h3>
+									<span class="company"><span class="company-name">Radicle Minds (Ekyamm)</span> (Jan 2024 - Current)</span>
+								</div>
+								 <div class="timeline-body">
+									<p>Led backend development for a health tech platform, ensuring secure patient management, seamless integrations, and scalable architecture while collaborating with cross-functional teams and mentoring new hires.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-inverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
 									<h3 class="timeline-title">Software Developer</h3>
-									<span class="company"><span class="company-name">Accennovate Tech Solutions</span> (Feb 2023 - Current)</span>
+									<span class="company"><span class="company-name">Accennovate Tech Solutions</span> (Feb 2023 - Jan 2024)</span>
 								</div>
 								<div class="timeline-body">
 									<p>Developed role-based CMS website, streamlined workflows reducing inefficiencies by 80%, provided training and support, tested and deployed enhancements, and documented project aspects comprehensively</p>
 								</div>
 							</div>
 						</li>
-						<li class="timeline-inverted animate-box">
+						<li class="timeline-unverted animate-box">
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -141,7 +229,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="animate-box timeline-unverted">
+						<li class="animate-box timeline-inverted">
 							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -158,7 +246,7 @@
 						<li class="timeline-heading text-center animate-box">
 							<div><h3>Education</h3></div>
 						</li>
-						<li class="timeline-inverted animate-box">
+						<li class="timeline-unverted animate-box">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -170,7 +258,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="animate-box timeline-unverted">
+						<li class="animate-box timeline-inverted">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -182,7 +270,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="timeline-inverted animate-box">
+						<li class="timeline-unverted animate-box">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
@@ -286,6 +374,36 @@
 			</div>
 			<div class="row row-pb-md">
 				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/js.png" width="165" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/nodejs.png" width="165" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" style="" src="images/skills/express.png" width="195" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/mongodb.png" width="225" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/mysql.png" width="200" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/github-mark.png" width="165" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/postman.png" width="225" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/jira.png" width="225" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/aws.png" width="225" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+					<img class="chart" src="images/skills/vscode.png" width="145" alt="">
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
 					<img class="chart" src="images/skills/html5.png" width="165" alt="">
 					<!-- <div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div> -->
 				</div>
@@ -293,37 +411,12 @@
 					<img class="chart" src="images/skills/css3.png" width="165" alt="">
 					<!-- <div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div> -->
 				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
-					<img class="chart" src="images/skills/js.png" width="165" alt="">
-				</div>
 				
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
+				<!-- <div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
 					<img class="chart" src="images/skills/bootstrap.png" width="165" alt="">
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
-					<img class="chart" style="" src="images/skills/express.png" width="195" alt="">
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
-					<!-- Ref: https://www.iconfinder.com/search?q=nodejs -->
-					<img class="chart" src="images/skills/nodejs.png" width="165" alt="">
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
-					<img class="chart" src="images/skills/mysql.png" width="200" alt="">
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
-					<img class="chart" src="images/skills/mongodb.png" width="225" alt="">
-				</div>
+				</div> -->
 				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
 					<img class="chart" src="images/skills/jquery.png" width="225" alt="">
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
-					<img class="chart" src="images/skills/postman.png" width="225" alt="">
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
-					<img class="chart" src="images/skills/aws.png" width="225" alt="">
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center img-div">
-					<img class="chart" src="images/skills/vscode.png" width="145" alt="">
 				</div>
 			</div>
 			<!-- <div class="row">
@@ -489,18 +582,17 @@
 		</div>
 	</div> -->
 
-	<div id="fh5co-blog">
+	<!-- <div id="fh5co-blog">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Post on Medium</h2>
-					<!-- <p id="mediumTitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius voluptate placeat rerum reprehenderit, dolores ea enim corporis similique libero sint error impedit temporibus odio magnam sapiente, debitis minima nam ex.</p> -->
 				</div>
 			</div>
 			<div id="allMediumPosts" class="row">
 				<div id="blog_1" class="col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(https://miro.medium.com/v2/resize:fit:1100/format:webp/1*UqOgoSsn8VHpIo52TOqw9Q.png);"></a>
+						<a href="#" class="blog-bg" style="background-image: url(https://hds.hel.fi/images/foundation/visual-assets/placeholders/image-m@3x.png);"></a>
 						<div class="blog-text">
 							<span class="posted_on">June 05, 2023</span>
 							<h3><a class="blog-title" href="#">The Dark Shadow of Carbon Footprint</a></h3>
@@ -514,7 +606,7 @@
 							</ul>
 						</div> 
 					</div>
-				</div>
+				</div> -->
 				<!-- <div class="col-md-4">
 					<div class="fh5co-blog animate-box">
 						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
@@ -545,9 +637,9 @@
 						</div> 
 					</div>
 				</div> -->
-			</div>
+			<!-- </div>
 		</div>
-	</div>
+	</div> -->
 	
 	<!-- <div id="fh5co-started" class="fh5co-bg-dark">
 		<div class="overlay"></div>
@@ -641,7 +733,7 @@
 								<li><a href="mailto: mahodar.majgaonkar@gmail.com" target="_blank"><i class="icon-mail3"></i></a></li>
 							</ul>
 						</div>
-						<p class="col-sm-12 col-md-6" align="right" style="padding-top: 5px;">© 2023 Mahodar Majgaonkar. All rights reserved.</p>
+						<p class="col-sm-12 col-md-6" align="right" style="padding-top: 5px;">© <span id="footer-year"></span> Mahodar Majgaonkar. All rights reserved.</p>
 					</div>	
 				</div>
 			</div>
